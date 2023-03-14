@@ -50,8 +50,8 @@ export const ProjectCard = ({name}) => {
   return (
     <>
       { close ? <Carousel close={() => setClose(false)}/> : null }
-      <div className='zoom-in zoom-out shadow-md bg-orange-50 h-fit w-full max-w-[500px] lg:max-w-[1000px] rounded-md grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-[1.2fr_0.8fr] overflow-hidden mb-10'>
-        <div className='relative h-full w-full'>
+      <div className='zoom-in zoom-out shadow-md bg-orange-50 h-fit w-full max-w-[500px] lg:max-w-[1000px] rounded-md grid grid-rows-[200px_fit] lg:grid-rows-1 lg:grid-cols-[1.2fr_0.8fr] overflow-hidden mb-10'>
+        <div className='relative h-[200px] lg:h-full w-full'>
           <Image src={map[name]?.src} fill style={{objectFit: 'cover'}}/>
         </div>
         <div className='p-8 flex flex-col gap-2 justify-center'>
