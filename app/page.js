@@ -153,7 +153,7 @@ export default function Home() {
             <div className='flex items-center gap-4 hover:text-teal-600 hover:dark:text-teal-500 transition ease-in-out duration-300 '>
               <BsPhoneFill/>
               <div>
-                <p className='text-lg text-black font-semibold dark:text-white text-left'>Telephone</p>
+                <p className='text-lg text-black font-semibold dark:text-white text-left'>Phone</p>
                 <p className='text-sm'>+34 657 314 695</p>
               </div>
             </div>

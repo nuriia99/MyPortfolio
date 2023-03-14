@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import tfg1 from '../public/tfg1.png'
 import tfg2 from '../public/tfg2.png'
 import tfg3 from '../public/tfg3.png'
@@ -11,6 +11,17 @@ import Image from 'next/image'
 
 export const Carousel = ({close}) => {
   const slides = [tfg1, tfg2, tfg3, tfg4, tfg5];
+
+  const refImg = useRef(null)
+  const refPoints = useRef(null)
+  console.log(refImg)
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true)
+  }, [])
+
+  const handleClickOutside = (e) => {
+    if (!refImg.current.contains(e.target) && !refPoints.current.contains(e.target)) close()
+  }
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,7 +38,6 @@ export const Carousel = ({close}) => {
   };
 
   const goToSlide = (slideIndex) => {
-    console.log(slideIndex)
     setCurrentIndex(slideIndex);
   };
   return (
@@ -36,7 +46,7 @@ export const Carousel = ({close}) => {
       <div className='text-right'>
         <button onClick={close} className='text-white text-2xl'><AiFillCloseCircle/></button>
       </div>
-      <div className='relative h-[90%] w-full'>
+      <div className='relative h-[90%] w-full' ref={refImg}>
         <Image className='w-full rounded-2xl bg-center bg-cover duration-500' src={slides[currentIndex]} fill style={{objectFit: 'contain'}}/>
       </div>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -45,7 +55,7 @@ export const Carousel = ({close}) => {
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <div className='flex bottom-0 justify-center py-2'>
+      <div className='flex bottom-0 justify-center py-2' ref={refPoints}>
     {slides.map((slide, slideIndex) => (
       <div
         key={slideIndex}

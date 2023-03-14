@@ -15,7 +15,7 @@ export const ProjectCard = ({name}) => {
     tfg: {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
-      explanation: "As a final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, view their medical history, create and make visits, and generate patient lists.",
+      explanation: "As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists.",
       tech: "React, SASS, Axios, MongoDB, Express, Postman, Cypress",
       code: "https://github.com/nuriia99/tfgFrontend",
       demo: <button onClick={() => setClose(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
@@ -23,7 +23,7 @@ export const ProjectCard = ({name}) => {
     booking: {
       src: bookingImg,
       title: "BOOKING CLONE",
-      explanation: "Booking.com is a website that allows users to compare hotel prices and make reservations. In this personal project, a clone of the main page of Booking.com has been created, to learn more in detail how to implement images and how carousels works.",
+      explanation: "Booking.com is a website that allows users to compare hotel prices and make reservations. In this personal project, a clone of the main page of Booking.com has been created to learn more in detail how to implement images and how carousels works.",
       tech: "React, SASS",
       code: "https://github.com/nuriia99/BookingProjectFrontend",
       demo: <a href="https://nacbooking.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
@@ -39,7 +39,7 @@ export const ProjectCard = ({name}) => {
     personaltrainer: {
       src: personalTrainerImg,
       title: "FIT YOURSELF",
-      explanation: "FitYourself it's a landing page to show the services of a personal trainer. In that project I learnt to layout and do a responsive website and the basics of css and bootstrap. ",
+      explanation: "FitYourself it's a landing page that show the services of a personal trainer. In that project I learnt to layout, create a responsive website and the basics of css and bootstrap. ",
       tech: "HTML, CSS, Bootstrap",
       code: "https://github.com/nuriia99/PersonalTrainer",
       demo: <a href="https://nacfityourself.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
