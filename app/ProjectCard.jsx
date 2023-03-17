@@ -7,6 +7,17 @@ import Image from 'next/image'
 import { AiFillGithub, AiOutlineExport } from 'react-icons/ai'
 import { MdOutlineFindInPage } from 'react-icons/md'
 import { Carousel } from './Carousel'
+import { ReactTech } from './techs/ReactTech'
+import { SassTech } from './techs/SassTech'
+import { AxiosTech } from './techs/AxiosTech'
+import { ApiRESTTech } from './techs/ApiRestTech'
+import { ExpressTech } from './techs/ExpressTech'
+import { PostmanTech } from './techs/PostmanTech'
+import { CypressTech } from './techs/CypressTech'
+import { MDBTech } from './techs/MDBTech'
+import { HtmlTech } from './techs/HtmlTech'
+import { CssTech } from './techs/CssTech'
+import { BootstrapTech } from './techs/BootstrapTech'
 
 export const ProjectCard = ({name}) => {
   const [close, setClose] = useState(false)
@@ -16,7 +27,7 @@ export const ProjectCard = ({name}) => {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
       explanation: "As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists.",
-      tech: "React, SASS, Axios, ApiREST, MongoDB, Express, Postman, Cypress",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><SassTech/><AxiosTech/><ApiRESTTech/><MDBTech/><ExpressTech/><PostmanTech/><CypressTech/></div>,
       code: "https://github.com/nuriia99/tfgFrontend",
       demo: <button onClick={() => setClose(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
     },
@@ -24,7 +35,7 @@ export const ProjectCard = ({name}) => {
       src: bookingImg,
       title: "BOOKING CLONE",
       explanation: "Booking.com is a website that allows users to compare hotel prices and make reservations. In this personal project, a clone of the main page of Booking.com has been created to learn more in detail how to implement images and how carousels works.",
-      tech: "React, SASS",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><SassTech/></div>,
       code: "https://github.com/nuriia99/BookingProjectFrontend",
       demo: <a href="https://nacbooking.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
     },
@@ -32,7 +43,7 @@ export const ProjectCard = ({name}) => {
       src: easybankImg,
       title: "EASYBANK",
       explanation: <>Easybank project is a challenge from <a href='https://www.frontendmentor.io/' target="_blank" className='text-red-500 inline-flex gap-2 items-center'>Frontend Mentor <AiOutlineExport/></a>. That challenge consisted on create a landing page for an hypothetical bank. In that project I learnt about grid, flex and animations.</>,
-      tech: "HTML, SASS",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><HtmlTech/><SassTech/></div>,
       code: "https://github.com/nuriia99/EasybankLandingPage",
       demo: <a href="https://naceasybank.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
     },
@@ -40,7 +51,7 @@ export const ProjectCard = ({name}) => {
       src: personalTrainerImg,
       title: "FIT YOURSELF",
       explanation: "FitYourself it's a landing page that show the services of a personal trainer. In that project I learnt to layout, create a responsive website and the basics of css and bootstrap. ",
-      tech: "HTML, CSS, Bootstrap",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><HtmlTech/> <CssTech/> <BootstrapTech/></div>,
       code: "https://github.com/nuriia99/PersonalTrainer",
       demo: <a href="https://nacfityourself.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
     }
