@@ -16,7 +16,7 @@ export const ProjectCard = ({name}) => {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
       explanation: "As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists.",
-      tech: "React, SASS, Axios, MongoDB, Express, Postman, Cypress",
+      tech: "React, SASS, Axios, ApiREST, MongoDB, Express, Postman, Cypress",
       code: "https://github.com/nuriia99/tfgFrontend",
       demo: <button onClick={() => setClose(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
     },
