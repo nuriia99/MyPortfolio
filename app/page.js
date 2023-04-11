@@ -11,6 +11,8 @@ import css from '../public/css.svg'
 import js from '../public/js.svg'
 import react from '../public/react.svg'
 import sass from '../public/sass.svg'
+import redux  from '../public/redux.png'
+import nextjs  from '../public/nextjs.svg'
 import React, { useState } from 'react'
 import { ProjectCard } from './ProjectCard'
 
@@ -74,6 +76,8 @@ export default function Home() {
               <Image className='h-8 w-8 face-img' src={js} objectFit='contain'/>
               <Image className='h-8 w-8 face-img' src={react} objectFit='contain'/>
               <Image className='h-8 w-8 face-img' src={sass} objectFit='contain'/>
+              <Image className='h-8 w-8 face-img' src={nextjs} objectFit='contain'/>
+              <Image className='h-8 w-8 face-img' src={redux} objectFit='contain'/>
             </span>
           </div>
         </div>
@@ -125,6 +129,7 @@ export default function Home() {
       <section id='projects' className='about-me px-10 dark:bg-gray-900'>
         <div className='lg:about-me-container flex flex-col justify-center items-center'>
           <h3 className={roboto.className + ' text-center flex justify-center font-semibold text-3xl text-red-700 dark:text-red-500 pb-10 pt-10'}>03. Projects</h3>
+          <ProjectCard name="appleProject"/>
           <ProjectCard name="tfg"/>
           <ProjectCard name="booking"/>
           <ProjectCard name="easybank"/>

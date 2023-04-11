@@ -3,6 +3,7 @@ import bookingImg from '../public/booking.png'
 import tfg1Img from '../public/tfg1.png'
 import easybankImg from '../public/easybank.png'
 import personalTrainerImg from '../public/personal-trainer.png'
+import apple from '../public/apple.png'
 import Image from 'next/image'
 import { AiFillGithub, AiOutlineExport } from 'react-icons/ai'
 import { MdOutlineFindInPage } from 'react-icons/md'
@@ -18,11 +19,24 @@ import { MDBTech } from './techs/MDBTech'
 import { HtmlTech } from './techs/HtmlTech'
 import { CssTech } from './techs/CssTech'
 import { BootstrapTech } from './techs/BootstrapTech'
+import { TailwindcssTech } from './techs/TailwindcssTech'
+import { ReduxTech } from './techs/ReduxTech'
+import { NextTech } from './techs/NextTech'
+import { StripeTech } from './techs/StripeTech'
+import { GoogleCloudTech } from './techs/GoogleCloudTech'
 
 export const ProjectCard = ({name}) => {
   const [close, setClose] = useState(false)
 
   const map = {
+    appleProject: {
+      src: apple,
+      title: "Apple Ecommerce",
+      explanation: "This project was selected to learn deeply how use Next and Redux in my projects. Also, It was great to learn how develop a real paid system using Stripe.",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><TailwindcssTech/><ReduxTech/><NextTech/><StripeTech/><GoogleCloudTech/></div>,
+      code: "https://github.com/nuriia99/AppleProject",
+      demo: <a href="https://apple-project-git-master-nuriia99.vercel.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
+    },
     tfg: {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
