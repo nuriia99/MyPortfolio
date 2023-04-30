@@ -15,17 +15,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  transition: all 1s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 a {
   color: inherit;
@@ -139,4 +131,50 @@ a {
   100% { 
     transform: translate(1px);
   }
+}
+
+.box{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  animation: animate 4s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden2 {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.color-transition{
+  transition: all 1s;
+}
+
+.next-white {
+  filter: invert(92%) sepia(0%) saturate(7475%) hue-rotate(202deg) brightness(107%) contrast(109%);
 }
