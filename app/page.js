@@ -32,17 +32,18 @@ export default function Home() {
     })
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if(entry.isIntersecting) {
-        entry .target.classList.add('show')
-      } else {
-        entry.target.classList.remove('show')
-      }
-    })
-  })
+  
 
   useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          entry .target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
     const hiddenElements = document.querySelectorAll('.hidden')
     const hiddenElements2 = document.querySelectorAll('.hidden2')
     hiddenElements.forEach((el) => observer.observe(el))
@@ -91,16 +92,16 @@ export default function Home() {
               <span className='flex items-center flex-wrap gap-7 pt-20'>
                 <p className='dark:text-white'>Main Tech Stack</p>
                 <p className='dark:text-white'>|</p>
-                <Image className='h-8 w-8 face-img' src={html5} objectFit='contain'/>
-                <Image className='h-8 w-8 face-img' src={css} objectFit='contain'/>
-                <Image className='h-8 w-8 face-img' src={js} objectFit='contain'/>
-                <Image className='h-8 w-8 face-img' src={react} objectFit='contain'/>
-                <Image className='h-8 w-8 face-img' src={sass} objectFit='contain'/>
+                <Image className='h-8 w-8 face-img' src={html5} style={{objectFit: "contain"}} />
+                <Image className='h-8 w-8 face-img' src={css} style={{objectFit: "contain"}}/>
+                <Image className='h-8 w-8 face-img' src={js} style={{objectFit: "contain"}}/>
+                <Image className='h-8 w-8 face-img' src={react} style={{objectFit: "contain"}}/>
+                <Image className='h-8 w-8 face-img' src={sass} style={{objectFit: "contain"}}/>
                 {
-                  darkMode ? <Image className='h-8 w-8 face-img next-white' src={nextjs} objectFit='contain'/> 
-                  : <Image className='h-8 w-8 face-img' src={nextjs} objectFit='contain'/>
+                  darkMode ? <Image className='h-8 w-8 face-img next-white' src={nextjs} style={{objectFit: "contain"}}/> 
+                  : <Image className='h-8 w-8 face-img' src={nextjs} style={{objectFit: "contain"}}/>
                 }
-                <Image className='h-8 w-8 face-img' src={redux} objectFit='contain'/>
+                <Image className='h-8 w-8 face-img' src={redux} style={{objectFit: "contain"}}/>
               </span>
             </div>
           </div>
@@ -120,7 +121,7 @@ export default function Home() {
               </div>
               <div>
                 <div className='relative h-60 w-60 flex justify-center min-w-fit overflow-hidden'>
-                  <Image className='box face-img' src={face} layout={'fill'} objectFit={'contain'}/>
+                  <Image className='box face-img' src={face} style={{objectFit: "contain", layout: "fill"}} />
                 </div>
               </div>
             </div>
