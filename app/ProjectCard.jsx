@@ -7,7 +7,6 @@ import apple from '../public/apple.png'
 import Image from 'next/image'
 import { AiFillGithub, AiOutlineExport } from 'react-icons/ai'
 import { MdOutlineFindInPage } from 'react-icons/md'
-import { Carousel } from './Carousel'
 import { ReactTech } from './techs/ReactTech'
 import { SassTech } from './techs/SassTech'
 import { AxiosTech } from './techs/AxiosTech'
@@ -25,8 +24,7 @@ import { NextTech } from './techs/NextTech'
 import { StripeTech } from './techs/StripeTech'
 import { GoogleCloudTech } from './techs/GoogleCloudTech'
 
-export const ProjectCard = ({name}) => {
-  const [close, setClose] = useState(false)
+export const ProjectCard = ({name, carousel}) => {
 
   const map = {
     appleProject: {
@@ -43,7 +41,7 @@ export const ProjectCard = ({name}) => {
       explanation: "As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists.",
       tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><SassTech/><AxiosTech/><ApiRESTTech/><MDBTech/><ExpressTech/><PostmanTech/><CypressTech/></div>,
       code: "https://github.com/nuriia99/tfgFrontend",
-      demo: <button onClick={() => setClose(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
+      demo: <button onClick={() => carousel(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
     },
     booking: {
       src: bookingImg,
@@ -74,7 +72,7 @@ export const ProjectCard = ({name}) => {
   
   return (
     <>
-      { close ? <Carousel close={() => setClose(false)}/> : null }
+      
       <div className='zoom-in zoom-out shadow-md bg-orange-50 h-fit w-full max-w-[500px] lg:max-w-[1000px] rounded-md grid grid-rows-[200px_fit] lg:grid-rows-1 lg:grid-cols-[1.2fr_0.8fr] overflow-hidden mb-10'>
         <div className='relative h-[200px] lg:h-full w-full'>
           <Image src={map[name]?.src} fill style={{objectFit: 'cover'}}/>

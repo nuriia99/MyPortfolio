@@ -15,6 +15,7 @@ import redux  from '../public/redux.png'
 import nextjs  from '../public/nextjs.svg'
 import React, { useState, useEffect } from 'react'
 import { ProjectCard } from './ProjectCard'
+import { Carousel } from './Carousel'
 
 const roboto = Roboto_Mono({ subsets: ['latin'], weight:['400', '700'] })
 const poppins = Poppins({ subsets: ['latin'], weight:['400', '700'] })
@@ -22,6 +23,7 @@ const poppins = Poppins({ subsets: ['latin'], weight:['400', '700'] })
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
   const [day, setDay] = useState('day')
+  const [close, setClose] = useState(false)
   
 
   const handleDarkMode = () => {
@@ -55,6 +57,7 @@ export default function Home() {
     <main className={poppins.className}>
       <div className={darkMode ? 'dark' : ''}>
       <div className='dark:bg-gray-900 color-transition'>
+        { close ? <Carousel close={() => setClose(false)}/> : null }
         <section id='presentation' className='color-transition px-10 dark:bg-gray-900'>
           <div className='bg-red-700 dark:bg-white fixed inset-0 h-fit w-full px-10 py-5  bg-opacity-80 z-10 flex justify-center backdrop-blur'>
             <nav className='relative flex items-center justify-between w-full lg:w-70p text-white dark:text-black '>
@@ -154,7 +157,7 @@ export default function Home() {
           <div className='lg:about-me-container flex flex-col justify-center items-center'>
             <h3 className={roboto.className + ' text-center flex justify-center font-semibold text-3xl text-red-700 dark:text-red-500 pb-10 pt-10'}>03. Projects</h3>
             <ProjectCard name="appleProject"/>
-            <ProjectCard name="tfg"/>
+            <ProjectCard name="tfg" carousel={() => setClose(true)}/>
             <ProjectCard name="booking"/>
             <ProjectCard name="easybank"/>
             <ProjectCard name="personaltrainer"/>
