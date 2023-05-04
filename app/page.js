@@ -89,27 +89,25 @@ export default function Home() {
                   <a target="_blank" className='grid content-center hover:text-gray-900 dark:hover:text-gray-400 transition ease-in-out duration-300' href='https://github.com/nuriia99'><AiFillGithub/></a>
                   <a href='./cv.pdf' target="_blank" className="relative bg-gradient-to-r text-sm from-red-500 to-red-800 hover:from-red-400 hover:to-red-700 text-white px-4 py-2 rounded-md transition ease-in-out duration-300 before-[''] before:absolute before:inset-0 before:w-full before:h-full before:border-2 before:border-transparent before:hover:border-red-700 before:dark:hover:border-white before:hover:top-1 break-after-autohover before:rounded-md  before:hover:left-1 before:-z-10 before:transition-all before:duration-200">Resume</a>
                 </div>
-              <span className='flex items-center flex-wrap gap-7 pt-20'>
-                <p className='dark:text-white'>Main Tech Stack</p>
-                <p className='dark:text-white'>|</p>
-                <Image className='h-8 w-8 face-img' src={html5} style={{objectFit: "contain"}} />
-                <Image className='h-8 w-8 face-img' src={css} style={{objectFit: "contain"}}/>
-                <Image className='h-8 w-8 face-img' src={js} style={{objectFit: "contain"}}/>
-                <Image className='h-8 w-8 face-img' src={react} style={{objectFit: "contain"}}/>
-                <Image className='h-8 w-8 face-img' src={sass} style={{objectFit: "contain"}}/>
-                {
-                  darkMode ? <Image className='h-8 w-8 face-img next-white' src={nextjs} style={{objectFit: "contain"}}/> 
-                  : <Image className='h-8 w-8 face-img' src={nextjs} style={{objectFit: "contain"}}/>
-                }
-                <Image className='h-8 w-8 face-img' src={redux} style={{objectFit: "contain"}}/>
-              </span>
+              <div className='pt-10'>
+                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Programming lenguages:</h5>
+                <div className='w-full text-center lg:text-start pb-5'>Java, Javascript, PHP, C++ and C#</div>
+                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Web Programming Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5'>HTML, CSS, SASS and React</div>
+                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>React Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5'>Typescript, Redux, Next</div>
+                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Databases:</h5>
+                <div className='w-full text-center lg:text-start pb-5'>MYSQL, postgreSQL and MongoDB</div>
+                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Version Control Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5'>Git and Github</div>
+              </div>
             </div>
           </div>
           
         </section>
         <section id='about-me' className='hidden about-me px-10 dark:bg-gray-900'>
           <div className='lg:about-me-container'>
-            <h3 className={roboto.className + ' text-center flex justify-center font-semibold text-3xl text-red-700 dark:text-red-500 pb-5 pt-36'}>01. About me</h3>
+            <h3 className={roboto.className + ' text-center flex justify-center font-semibold text-3xl text-red-700 dark:text-red-500 pb-5 pt-14'}>01. About me</h3>
             <div className='flex lg:flex-row flex-col items-center gap-5'>
               <div className='flex flex-col justify-center'>
                 <p className='leading-7 text-justify pb-5 dark:text-white'>
