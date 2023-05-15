@@ -80,7 +80,7 @@ export default function Home() {
             <div className='lg:presentation-container'>
               <div>
                 <h2 className='lg:text-left text-center text-5xl font-semibold text-red-700 dark:text-red-500'>Nuria Anton <span className="wave">👋</span></h2>
-                <h3 className='lg:text-left text-center text-2xl pt-4 pb-4 text-black dark:text-white'>Front-End React Developer</h3>
+                <h3 className='lg:text-left text-center text-2xl pt-4 pb-4 text-black dark:text-white'>FullStack Web Developer</h3>
                 <div>
                   <p className='lg:text-left text-center text-sm leading-8 text-zinc-600 dark:text-zinc-400'>
                     Hi, I'm Nuria. A junior software engineer specialized in Web Development, who lives in Barcelona, Spain 📌.
@@ -93,16 +93,16 @@ export default function Home() {
                   <a href='./cv.pdf' target="_blank" className="relative bg-gradient-to-r text-sm from-red-500 to-red-800 hover:from-red-400 hover:to-red-700 text-white px-4 py-2 rounded-md transition ease-in-out duration-300 before-[''] before:absolute before:inset-0 before:w-full before:h-full before:border-2 before:border-transparent before:hover:border-red-700 before:dark:hover:border-white before:hover:top-1 break-after-autohover before:rounded-md  before:hover:left-1 before:-z-10 before:transition-all before:duration-200">Resume</a>
                 </div>
               <div className='pt-10'>
-                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Programming lenguages:</h5>
-                <div className='w-full text-center lg:text-start pb-5'>Java, Javascript, PHP, C++ and C#</div>
-                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Web Programming Techs:</h5>
-                <div className='w-full text-center lg:text-start pb-5'>HTML, CSS, SASS and React</div>
-                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>React Techs:</h5>
-                <div className='w-full text-center lg:text-start pb-5'>Typescript, Redux, Next</div>
-                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Databases:</h5>
-                <div className='w-full text-center lg:text-start pb-5'>MYSQL, postgreSQL and MongoDB</div>
-                <h5 className='font-semibold text-center lg:text-start hover:text-red-800 transition duration-300'>Version Control Techs:</h5>
-                <div className='w-full text-center lg:text-start pb-5'>Git and Github</div>
+                <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Programming lenguages:</h5>
+                <div className='w-full text-center lg:text-start pb-5 dark:text-white' >Java, Javascript, PHP, C++ and C#</div>
+                <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Web Programming Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5 dark:text-white'>HTML, CSS, SASS and React</div>
+                <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>React Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5 dark:text-white'>Typescript, Redux, Next</div>
+                <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Databases:</h5>
+                <div className='w-full text-center lg:text-start pb-5 dark:text-white'>MYSQL, postgreSQL and MongoDB</div>
+                <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Version Control Techs:</h5>
+                <div className='w-full text-center lg:text-start pb-5 dark:text-white'>Git and Github</div>
               </div>
             </div>
           </div>

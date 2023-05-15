@@ -38,7 +38,7 @@ export const ProjectCard = ({name, carousel}) => {
     tfg: {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
-      explanation: "As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists.",
+      explanation: <>As my final degree project, I created a multiplatform web application for primary care centers in Spain. On this website you can search for a patient, take a look at their medical history, create visits, and generate patient lists. If you are interested to know more, don't doubt to check the <a href="./memoria.pdf" target='_blank' className='text-red-500'>documentation</a> and the <a href="https://www.youtube.com/watch?v=ct58Lc0EC2c&ab_channel=NuriaAnton" target='_blank' className='text-red-500'>video</a>.</>,
       tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><SassTech/><AxiosTech/><ApiRESTTech/><MDBTech/><ExpressTech/><PostmanTech/><CypressTech/></div>,
       code: "https://github.com/nuriia99/tfgFrontend",
       demo: <button onClick={() => carousel(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
