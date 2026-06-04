@@ -83,7 +83,7 @@ export default function Home() {
                   <h3 className='lg:text-left text-center text-2xl pt-4 pb-4 text-black dark:text-white'>FullStack Web Developer</h3>
                   <div>
                     <p className='lg:text-left text-center text-sm leading-8 text-zinc-600 dark:text-zinc-400'>
-                      Hi, I'm Nuria. A junior software engineer specialized in Web Development, who lives in Barcelona, Spain 📌.
+                      Hi, I'm Nuria. A intermediate software engineer specialized in Web Development, who lives in Barcelona, Spain 📌.
                     </p>
                   </div>
                 </div>
@@ -94,11 +94,9 @@ export default function Home() {
                 </div>
                 <div className='pt-10'>
                   <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Programming lenguages:</h5>
-                  <div className='w-full text-center lg:text-start pb-5 dark:text-white' >Java, Javascript, PHP, C++ and C#</div>
-                  <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Web Programming Techs:</h5>
-                  <div className='w-full text-center lg:text-start pb-5 dark:text-white'>HTML, CSS, SASS and React</div>
-                  <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>React Techs:</h5>
-                  <div className='w-full text-center lg:text-start pb-5 dark:text-white'>Typescript, Redux, Next</div>
+                  <div className='w-full text-center lg:text-start pb-5 dark:text-white' > C#, .NET, Java, Javascript, Typescript</div>
+                  <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Cloud Platforms:</h5>
+                  <div className='w-full text-center lg:text-start pb-5 dark:text-white'>Amazon Web Services, Azure Devops</div>
                   <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Databases:</h5>
                   <div className='w-full text-center lg:text-start pb-5 dark:text-white'>MYSQL, postgreSQL and MongoDB</div>
                   <h5 className='font-semibold text-center lg:text-start dark:text-white hover:text-red-800 transition duration-300'>Version Control Techs:</h5>
@@ -117,7 +115,7 @@ export default function Home() {
                     Hello! My name is Nuria and I enjoy creating websites on the internet. My interest in web development started during my degree, where I learnt how fun designing new pages and building my own ideas was.
                   </p>
                   <p className='leading-7 text-justify pt-0 dark:text-white'>
-                    I've recently finished a <b>software engineering degree</b> at UPC, and I've completed a FullStack Bootcamp to learn more about the most important technologies. At this point, my goal is to keep learning new skills and working on new projects to put in practise all I've learnt.
+                    I finished a <b>software engineering degree</b> at UPC, and I've completed a FullStack Bootcamp to learn more about the most important technologies. Now, I'm specializing in .NET as a <b>backend developer</b>. I encourage you to take a look at my CV to learn more about me!
                   </p>
                 </div>
                 <div>
@@ -156,8 +154,8 @@ export default function Home() {
           <section id='projects' className='hidden about-me px-10 dark:bg-gray-900'>
             <div className='lg:about-me-container flex flex-col justify-center items-center'>
               <h3 className={roboto.className + ' text-center flex justify-center font-semibold text-3xl text-red-700 dark:text-red-500 pb-10 pt-10'}>03. Projects</h3>
-              <ProjectCard name="appleProject" />
               <ProjectCard name="tfg" carousel={() => setClose(true)} />
+              <ProjectCard name="appleProject" />
               <ProjectCard name="booking" />
               <ProjectCard name="easybank" />
               <ProjectCard name="personaltrainer" />

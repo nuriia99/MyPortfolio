@@ -27,14 +27,6 @@ import { GoogleCloudTech } from './techs/GoogleCloudTech'
 export const ProjectCard = ({name, carousel}) => {
 
   const map = {
-    appleProject: {
-      src: apple,
-      title: "Apple Ecommerce",
-      explanation: "This project was selected to learn deeply how use Next and Redux in my projects. Also, It was great to learn how develop a real paid system using Stripe.",
-      tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><TailwindcssTech/><ReduxTech/><NextTech/><StripeTech/><GoogleCloudTech/></div>,
-      code: "https://github.com/nuriia99/AppleProject",
-      demo: <a href="https://apple-project-git-master-nuriia99.vercel.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
-    },
     tfg: {
       src: tfg1Img,
       title: "FINAL DEGREE PROJECT",
@@ -43,13 +35,21 @@ export const ProjectCard = ({name, carousel}) => {
       code: "https://github.com/nuriia99/tfgFrontend",
       demo: <button onClick={() => carousel(true)} className='inline-flex gap-2 items-center'>See more <MdOutlineFindInPage/></button>
     },
+    appleProject: {
+      src: apple,
+      title: "Apple Ecommerce",
+      explanation: "This project was selected to learn deeply how use Next and Redux in my projects. Also, It was great to learn how develop a real paid system using Stripe.",
+      tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><TailwindcssTech/><ReduxTech/><NextTech/><StripeTech/><GoogleCloudTech/></div>,
+      code: "https://github.com/nuriia99/AppleProject",
+      demo: <a href="https://apple-project-git-master-nuriia99.vercel.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
+    },
     booking: {
       src: bookingImg,
       title: "BOOKING CLONE",
       explanation: "Booking.com is a website that allows users to compare hotel prices and make reservations. In this personal project, a clone of the main page of Booking.com has been created to learn more in detail how to implement images and how carousels works.",
       tech: <div className='flex gap-2 flex-wrap justify-center'><ReactTech/><SassTech/></div>,
       code: "https://github.com/nuriia99/BookingProjectFrontend",
-      demo: <a href="https://nacbooking.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
+      demo: <a href="https://bookclone.netlify.app/" target="_blank" className='flex justify-center items-center gap-3 cursor-pointer hover:text-red-600 transition ease-in-out duration-300'>Live Demo <MdOutlineFindInPage/> </a>
     },
     easybank: {
       src: easybankImg,
