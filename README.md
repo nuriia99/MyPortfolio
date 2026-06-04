@@ -1,42 +1,130 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MyPortfolio
 
-## Getting Started
+Personal portfolio of Nuria Antón - FullStack Web Developer
 
-First, run the development server:
+## 🛠️ Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+| Category | Technology |
+|----------|-------------|
+| **Framework** | Next.js 13.2.4 |
+| **Language** | JavaScript / React 18.2.0 |
+| **Styling** | Tailwind CSS 3.2.7 |
+| **Fonts** | Google Fonts (Poppins, Roboto Mono) |
+| **Icons** | React Icons |
+| **Deployment** | Vercel |
+
+## 🚀 Local Development
+
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/nuriia99/MyPortfolio.git
+   cd MyPortfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or with yarn
+   # yarn install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   - Navigate to: [http://localhost:3000](http://localhost:3000)
+
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Builds the app for production |
+| `npm run start` | Starts the production server |
+| `npm run lint` | Runs the linter |
+
+## 🌐 Deploy on Vercel
+
+The project is deployed at: **https://myportfolio.vercel.app**
+
+### Deploy Your Own on Vercel
+
+1. Create an account at [Vercel](https://vercel.com)
+2. Install Vercel CLI (optional):
+   ```bash
+   npm i -g vercel
+   ```
+3. Run the deployment:
+   ```bash
+   vercel
+   ```
+4. Or connect your GitHub repository directly to Vercel for automatic deployment
+
+## ✨ Features
+
+- **Dark/Light Mode**: Toggle to switch between light and dark themes
+- **Responsive Design**: Adapts to mobile, tablet, and desktop
+- **Sections**:
+  - Personal Presentation
+  - About Me
+  - Technical & Soft Skills
+  - Projects
+  - Contact Information
+- **Animations**: Scroll reveal effects
+- **Project Gallery**: Image carousel for projects
+- **External Links**: LinkedIn, GitHub, PDF Resume
+- **Smooth Navigation**: Smooth scroll between sections
+
+## 📁 Project Structure
+
+```
+MyPortfolio/
+├── app/
+│   ├── api/
+│   │   └── hello/
+│   │       └── route.js      # Example API route
+│   ├── techs/               # Tech components
+│   ├── Carousel.jsx         # Carousel component
+│   ├── ProjectCard.jsx     # Project card component
+│   ├── globals.css          # Global styles
+│   ├── layout.js            # Main layout
+│   └── page.js              # Main page
+├── public/
+│   ├── *.png, *.svg, *.pdf  # Static assets
+│   └── cv.pdf               # Resume / CV
+├── package.json
+├── tailwind.config.js
+├── next.config.js
+└── jsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Changing Content
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Edit `app/page.js` to modify:
+- Name and description
+- Displayed projects
+- Contact information
+- Skills
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Styling
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Global styles are in `app/globals.css`. Tailwind is configured in `tailwind.config.js`.
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+MIT License - See the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# MyPortfolio
->>>>>>> 18dabd8eaae405876dd724dc0a538442eeebe624
+Questions or suggestions? Open an issue or contact via LinkedIn.
