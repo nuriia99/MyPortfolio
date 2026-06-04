@@ -127,4 +127,4 @@ MIT License - See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Questions or suggestions? Open an issue or contact via LinkedIn.
+Questions or suggestions? Open an issue or contact via LinkedIn
